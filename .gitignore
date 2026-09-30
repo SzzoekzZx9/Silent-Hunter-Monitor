@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+
+# Local configuration (secrets — never commit)
+.env
+
+# SH3 helper cache files
+.sh3_*_cache.json
+
+# Patrol log writer journal (runtime state)
+.sh3_patrol_log_journal.json
+
+# Memory scan dumps
+memory-tools/*.dump
+# ncurses UI runtime log (stdout/stderr redirect while curses is active)
+sh3_master_ui.log
+
+# Memory investigation runtime data (dumps, logs, cached addresses)
+memory-tools/data/
+
+# Memory snapshot/diff runtime data (large binary files)
+runtime-data/
